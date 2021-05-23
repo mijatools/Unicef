@@ -280,8 +280,8 @@
             <span>Copyright ©
               <script type="text/javascript">
                 document.write(new Date().getFullYear());
-              </script> <a class="grey-text text-lighten-2" href="http://themeforest.net/user/pixinvent/portfolio?ref=pixinvent" target="_blank">DEVELOPER Y GIL</a> </span>
-            <span class="right hide-on-small-only"> Design and Developed by <a class="grey-text text-lighten-2" href="https://pixinvent.com/">DEVELOPER Y GIL</a></span>
+              </script> <a class="grey-text text-lighten-2" href="http://themeforest.net/user/pixinvent/portfolio?ref=pixinvent" target="_blank">DEVELOPER </a> </span>
+            <span class="right hide-on-small-only"> Design and Developed by <a class="grey-text text-lighten-2" href="https://pixinvent.com/">DEVELOPER</a></span>
           </div>
         </div>
     </footer>

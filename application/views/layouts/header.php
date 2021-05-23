@@ -7,9 +7,9 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
     <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-    <title>Materialize - Material Design Admin Template</title>
+    <title>UNICEF</title>
     <!-- Favicons-->
-    <link rel="icon" href="<?=base_url()?>assets/admin/images/favicon/A1.png" sizes="32x32">
+    <link rel="icon" href="<?=base_url()?>assets/admin/images/favicon/logo1.png" sizes="32x32">
     <!-- Favicons-->
     <link rel="apple-touch-icon-precomposed" href="<?=base_url()?>assets/admin/images/favicon/logo1.png">
     <!-- For iPhone -->
@@ -20,9 +20,10 @@
     <!-- CORE CSS-->
     <link href="<?=base_url()?>assets/admin/css/materialize.css" type="text/css" rel="stylesheet">
     <link href="<?=base_url()?>assets/admin/css/style.css" type="text/css" rel="stylesheet">
+    <link href="<?=base_url()?>assets/admin/css/style1.css" type="text/css" rel="stylesheet">
     <!-- Custome CSS-->
     <link href="<?=base_url()?>assets/admin/css/custom/custom.css" type="text/css" rel="stylesheet">
-    <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+    <!-- INCLUDED PLUN CSS ON THIS PAGE -->
     <link href="<?=base_url()?>assets/admin/vendors/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet">
     <link href="<?=base_url()?>assets/admin/vendors/flag-icon/css/flag-icon.min.css" type="text/css" rel="stylesheet">
   </head>
@@ -77,7 +78,7 @@
               <li>
                 <a href="javascript:void(0);" class="waves-effect waves-block waves-light profile-button" data-activates="profile-dropdown">
                   <span class="avatar-status avatar-online">
-                    <img src="<?=base_url()?>assets/admin/images/avatar/avatar-7.png" alt="avatar">
+                    <img src="<?=base_url()?>assets/admin/images/avatar/logo.png" alt="avatar">
                     <i></i>
                   </span>
                 </a>
@@ -123,11 +124,20 @@
                 <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">1 week ago</time>
               </li>
             </ul>
+
+             <!-- profile-dropdown -->
+             <ul id="usuario-dropdown" class="dropdown-content">
+              <li>
+                <a href="fwewef" class="grey-text text-darken-1">
+                  <i class="material-icons">faces</i> Logins</a>
+              </li>
+            </ul>
+
             <!-- profile-dropdown -->
             <ul id="profile-dropdown" class="dropdown-content">
               <li>
-                <a href="#" class="grey-text text-darken-1">
-                  <i class="material-icons">face</i> Profile</a>
+                <a href="<?=base_url()?>home/login" class="grey-text text-darken-1">
+                  <i class="material-icons">account_circle </i> Login</a>
               </li>
               <li>
                 <a href="#" class="grey-text text-darken-1">
@@ -147,6 +157,7 @@
                   <i class="material-icons">keyboard_tab</i> Logout</a>
               </li>
             </ul>
+            
           </div>
         </nav>
       </div>
@@ -170,8 +181,8 @@
                 <div class="col col s8 m8 l8">
                   <ul id="profile-dropdown-nav" class="dropdown-content">
                     <li>
-                      <a href="#" class="grey-text text-darken-1">
-                        <i class="material-icons">face</i> Profile</a>
+                      <a href="<?php echo site_url('login'); ?>" class="grey-text text-darken-1">
+                        <i class="material-icons">account_circle</i> Login</a>
                     </li>
                     <li>
                       <a href="#" class="grey-text text-darken-1">
@@ -221,35 +232,7 @@
                       <i class="material-icons">format_color_text</i>
                       <span class="nav-text">Forms</span>
                     </a>
-                </li>
-                <li class="bold">
-                  <a href="css-typography.html" class="waves-effect waves-cyan">
-                      <i class="material-icons">format_size</i>
-                      <span class="nav-text">Typography</span>
-                    </a>
-                </li>
-                <li class="bold">
-                  <a href="css-color.html" class="waves-effect waves-cyan">
-                      <i class="material-icons">invert_colors</i>
-                      <span class="nav-text">Color</span>
-                    </a>
-                </li>
-                <li class="bold">
-                  <a href="table-basic.html" class="waves-effect waves-cyan">
-                      <i class="material-icons">border_all</i>
-                      <span class="nav-text">Table</span>
-                    </a>
-                </li>
-                <li class="bold">
-                  <a href="ui-icons.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">lightbulb_outline</i>
-                    <span class="nav-text">Icons</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="btn waves-effect waves-light light-blue accent-4" href="https://pixinvent.com/materialize-material-design-admin-template/landing/" target="_blank">
-                    <i class="material-icons white-text">file_upload</i>Upgrade toe Pro!
-                  </a>
+                </li>                                                
                 </li>
               </ul>
             </li>
