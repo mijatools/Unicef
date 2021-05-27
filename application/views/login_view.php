@@ -1,67 +1,80 @@
+<main class="pt-5 mx-lg-5">
+    <div class="container-fluid mt-5">
 
-	     <!-- START CONTENT -->
-		 <section id="content">
-          <!--start container-->
-          <div class="container">
-            <!--card stats start-->
-            <div id="card-stats">
+    <div class="container">
+  <div class="row">
+    <div class="col-sm-3"> 
+    </div>
 
-			<br>
-			<div class="container">
-			<div class="row">
-			<div class="col col s3 m3 l3">
-			</div>
-			<div class="col col s6 m6 l6">
-			<div class="card-panel">
-                    <h3 class="header2"><center>
-					<img src="<?=base_url()?>assets/admin/images/gallary/d.png" alt="">
-					</center></h3>
-                    <div class="row">
-					<form action="<?php echo site_url('Login/auth'); ?>" method="POST" class="col s12">
-                        <div class="row">
-                          <div class="input-field col s12">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input id="name4" type="text" class="validate" name="username" placeholder="Ingrese su cuenta" required>							
-                            <label for="first_name">Nombre</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="input-field col s12">
-                            <i class="material-icons prefix">lock_outline</i>
-                            <input id="password5" type="password" class="validate" name="password" placeholder="ingrese su contraseña" required>
-                            <label for="password">Contraseña</label>
-                          </div>
-                        </div>      
-                          <div class="row">
-                            <div class="input-field col s12">
-                              <button class="btn waves-effect waves-light gradient-45deg-light-blue-cyan right" type="submit" name="action">Iniciar Sesión
-                                <i class="material-icons right">send</i>
-                              </button>
-                            </div>
-                          </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-			</div>
-			<div class="col col s3 m3 l3">
-			</div>
-			</div>
-			</div>
-			
-                  
-              
+    <div class="col-sm-6">
+     <!-- Material form login -->
+<div class="card">
+
+<h5 class="card-header info-color white-text text-center py-4">
+  <strong>INICIAR SESIÓN</strong>
+</h5>
+
+<!--Card content-->
+<div class="card-body px-lg-5 pt-0">
+
+  <!-- Form -->
+  <form class="text-center" action="<?php echo site_url('Login/auth'); ?>" method="POST" class="col s12">
+  <div class="view overlay zoom">
+  <center><img src="<?=base_url()?>assets/admin/images/avatar/login.png" class="img-fluid " alt="zoom"></center>
+  <div class="mask flex-center waves-effect waves-light">
+    
+  </div>
+</div>
+  
+    <!-- Email -->
+    <div class="md-form">
+      <input type="text" id="materialLoginFormEmail" class="form-control" name="username" required>
+      <label for="materialLoginFormEmail">E-mail</label>
+    </div>
+
+    <!-- Password -->
+    <div class="md-form">
+      <input type="password" id="materialLoginFormPassword" class="form-control"  name="password" required>
+      <label for="materialLoginFormPassword">Password</label>
+    </div>
+
+    <!-- Sign in button -->
+    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">INICIAR SESIÓN</button>
+
+ 
+
+    <!-- Social login -->
+    <p></p>
+    <a type="button" class="btn-floating btn-fb btn-sm">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a type="button" class="btn-floating btn-tw btn-sm">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a type="button" class="btn-floating btn-li btn-sm">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a type="button" class="btn-floating btn-git btn-sm">
+      <i class="fab fa-github"></i>
+    </a>
+
+  </form>
+  <!-- Form -->
+
+</div>
+
+</div>
+<!-- Material form login -->
+    </div>
+    
+    <div class="col-sm-3">
+     
+    </div>
+  </div>
+</div>
 
 
 
-
-
-
-
-
-	</div>
-            <!-- //////////////////////////////////////////////////////////////////////////// -->
-          </div>
-          <!--end container-->
-        </section>
-        <!-- END CONTENT -->
+    </div>
+  </main>
+  <!--Main layout-->

@@ -1,131 +1,91 @@
-    <!-- START CONTENT -->
-    <section id="content">
-          <!--start container-->
-          <div class="container">
-            <!--card stats start-->
-            <div id="card-stats">
-			<br>
-            <div class="container-fluid">
-           <div id="tabs" class="tabs">
-           <nav class="light-blue accent-1">
-    <ul>
-          <li><a href="<?php echo base_url(); ?>./Admin/Centros/"> <b>INICIO</b></a></li>
-            <li><a href="<?php echo base_url(); ?>Admin/RegisterUsuario"> <b>REGISTRAR USUARIO</b></a></li>
-            <li><a href="<?php echo base_url(); ?>Admin/ListaUsuario"> <b>LISTA DE USUARIO</b></a></li>
-            <li><a href="<?php echo base_url(); ?>./Admin/Centros/Instituciones/"><b>VER CAMBIOS</b></a></li>
-    </ul>
-  </nav>      
-            </div>
-           </div>
+         <!--Main layout-->
+         <main class="pt-5 mx-lg-5">
+           <div class="container-fluid mt-5">
 
+             <nav class="navbar navbar-expand-lg navbar-dark info-color example z-depth-3">
+               <a class="navbar-brand" href="#"><b>INICIO</b></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                 <ul class="navbar-nav">
+                   <li class="nav-item active">
+                     <a class="nav-link" href="<?php echo base_url(); ?>Admin/RegisterUsuario"> <b>REGISTRAR USUARIO</b> <span class="sr-only">(current)</span></a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="<?php echo base_url(); ?>Admin/ListaUsuario"> <b>LISTA DE USUARIO</b></a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="<?php echo base_url(); ?>./Admin/Centros/Instituciones/"><b>VER CAMBIOS</b></a>
+                   </li>
 
-           <div class="container">
-           <div class="row">
-              <div class="col col s3 m3 l3">
-                  </div>
+                 </ul>
+               </div>
+             </nav>
 
-                  <div class="col col s6 m6 l6"><br>
-                    
-                  <?php
-                    //NOTIFIACIONES ERROR
-                    echo validation_errors('<div class="alert alert-warnig">', '</div>');
+             <br>
+             <div class="container">
+               <div class="row">
+                 <div class="col-sm-3">
 
-                    //notificacion del login
-                    if ($this->session->flashdata('sukses')) {
-                        echo '<div class="msg msg-info z-depth-3">';
-                        echo $this->session->flashdata('sukses');
-                        echo '</div>';
-                    }
-                    // cambiamo la direccion de base url por login   admin/inputsekolah
-                    echo form_open(base_url('Admin/insertdata'), 'class="form-horizontal" entype="multipart/formdata"');
-                    ?>
+                 </div>
+                 <div class="col-sm-6">
 
+                   <div class="card">
+                     <!-- Default form register -->
+                     <form class=" border border-light p-5" action="#!">
 
-            
-                  <div class="card-panel">
-                    <h4 class="header2"><center>Registrar Usuarios</center></h4>
-                    <div class="row">
-                      <form class="col s12">
-                        <div class="row">
-                          <div class="input-field col s12">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input type="text" name="username" class="form-control" placeholder="Ingrese Su Nombre" value="<?php echo set_value('username') ?>" required>
-                            <label for="first_name">Nombre</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="input-field col s12">
-                            <i class="material-icons prefix">email</i>
-                            <input type="text" name="email" class="form-control" placeholder="Ingrese Su Email" value="<?php echo set_value('email') ?>" required>
-                            <label for="email">Email</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="input-field col s12">
-                            <i class="material-icons prefix">lock_outline</i>
-                            <input type="text" name="password" class="form-control" placeholder="Ingrese su password" value="<?php echo set_value('password') ?>" required>
-                            <label for="password">Password</label>
-                          </div>
-                        </div>   
-                        
-                        <div class="container">
-                        <div class="container">
-                        <div class="container">
-                        <div class="container">
-                        <div class="row">
-                          <div class="input-field col s6">
-                         <label for="">Tipo De Administrador</label><br>
-                                <div><select name="level" id="level" class="form-control1" value="<?php echo set_value('level') ?>">
-                                        <option value="1">Admin</option>
-                                        <option value="2">Administrador</option>
-                                        <option value="3">Usuario</option>
-                                    </select></div>
+                       <p class="h4 mb-4 blue-text"><b>Registrar Usuario</b></p>
 
-                                    
-                            
-                            </div>
-                            </div>
-                            </div>
+                       <?php
+                        //NOTIFIACIONES ERROR
+                        echo validation_errors('<div class="alert alert-warnig">', '</div>');
 
-                            
-                        </div>
-                        <button class="btn waves-effect waves-light right gradient-45deg-cyan-cyan" type="submit" name="action">REGISTRAR
-                                <i class="material-icons right">send</i>
-                              </button> 
-                        </div>
+                        //notificacion del login
+                        if ($this->session->flashdata('sukses')) {
+                          echo '<div class="msg msg-info z-depth-3">';
+                          echo $this->session->flashdata('sukses');
+                          echo '</div>';
+                        }
+                        // cambiamo la direccion de base url por login   admin/inputsekolah
+                        echo form_open(base_url('Admin/insertdata'), 'class="form-horizontal" entype="multipart/formdata"');
+                        ?>
 
-                        
-                          
-                             
-                           
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                
-              </div>
-            </div>
+                       <div class="md-form">
+                         <i class="fas fa-user prefix"></i>
+                         <input type="text" name="text" class="form-control" value="<?php echo set_value('username') ?>" required>
+                         <label for="inputIconEx2">Nombre</label>
+                       </div>
 
-                   
+                       <div class="md-form">
+                         <i class="fas fa-lock prefix"></i>
+                         <input type="password" name="password" id="inputIconEx2" class="form-control" value="<?php echo set_value('password') ?>" required>
+                         <label for="inputIconEx2">Ingrese Password</label>
+                         <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                           Al menos 8 caracteres y 1 dígito
+                         </small>
+                       </div>
 
-                    
-                    <?php echo form_close(); ?>
+                       <div class="md-form">
+                         <i class="fas fa-building prefix"></i>
+                         <input type="text" name="text" class="form-control" value="<?php echo set_value('email') ?>" required>
+                         <label for="inputIconEx2">Entidad</label>
+                       </div>
 
+                       <label for="">Tipo De Administrador</label><br>
+                       <div><select name="level" id="level" class="browser-default custom-select" value="<?php echo set_value('level') ?>">
+                           <option value="1">Admin</option>
+                           <option value="2">Administrador</option>
+                           <option value="3">Usuario</option>
+                         </select></div>
 
-                    
-          
-                  </div>
-
-                  <div class="col col s3 m3 l3">
-                  </div>
-                  </div>
-           </div>
-            
-           
-
-</div>
-            <!-- //////////////////////////////////////////////////////////////////////////// -->
-          </div>
-          <!--end container-->
-        </section>
-        <!-- END CONTENT -->
+                       <!-- Sign up button -->
+                       <button type="submit" class="btn btn-info my-4 btn-block" name="submit"  >REGISTRAR USUARIO</button>
+                       <hr>
+                       <?php echo form_close(); ?>
+                     </form>
+                   </div>
+                   <!-- Default form register -->
+                 </div>
+         </main>
+         <!--Main layout-->

@@ -1,303 +1,237 @@
-       <!-- START RIGHT SIDEBAR NAV-->
-       <aside id="right-sidebar-nav">
-          <ul id="chat-out" class="side-nav rightside-navigation">
-            <li class="li-hover">
-              <div class="row">
-                <div class="col s12 border-bottom-1 mt-5">
-                  <ul class="tabs">
-                    <li class="tab col s4">
-                      <a href="#activity" class="active">
-                        <span class="material-icons">graphic_eq</span>
-                      </a>
-                    </li>
-                    <li class="tab col s4">
-                      <a href="#chatapp">
-                        <span class="material-icons">face</span>
-                      </a>
-                    </li>
-                    <li class="tab col s4">
-                      <a href="#settings">
-                        <span class="material-icons">settings</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div id="settings" class="col s12">
-                  <h6 class="mt-5 mb-3 ml-3">GENERAL SETTINGS</h6>
-                  <ul class="collection border-none">
-                    <li class="collection-item border-none">
-                      <div class="m-0">
-                        <span class="font-weight-600">Notifications</span>
-                        <div class="switch right">
-                          <label>
-                            <input checked type="checkbox">
-                            <span class="lever"></span>
-                          </label>
-                        </div>
-                      </div>
-                      <p>Use checkboxes when looking for yes or no answers.</p>
-                    </li>
-                    <li class="collection-item border-none">
-                      <div class="m-0">
-                        <span class="font-weight-600">Show recent activity</span>
-                        <div class="switch right">
-                          <label>
-                            <input checked type="checkbox">
-                            <span class="lever"></span>
-                          </label>
-                        </div>
-                      </div>
-                      <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
-                    </li>
-                    <li class="collection-item border-none">
-                      <div class="m-0">
-                        <span class="font-weight-600">Notifications</span>
-                        <div class="switch right">
-                          <label>
-                            <input type="checkbox">
-                            <span class="lever"></span>
-                          </label>
-                        </div>
-                      </div>
-                      <p>Use checkboxes when looking for yes or no answers.</p>
-                    </li>
-                    <li class="collection-item border-none">
-                      <div class="m-0">
-                        <span class="font-weight-600">Show recent activity</span>
-                        <div class="switch right">
-                          <label>
-                            <input type="checkbox">
-                            <span class="lever"></span>
-                          </label>
-                        </div>
-                      </div>
-                      <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
-                    </li>
-                    <li class="collection-item border-none">
-                      <div class="m-0">
-                        <span class="font-weight-600">Show your emails</span>
-                        <div class="switch right">
-                          <label>
-                            <input type="checkbox">
-                            <span class="lever"></span>
-                          </label>
-                        </div>
-                      </div>
-                      <p>Use checkboxes when looking for yes or no answers.</p>
-                    </li>
-                    <li class="collection-item border-none">
-                      <div class="m-0">
-                        <span class="font-weight-600">Show Task statistics</span>
-                        <div class="switch right">
-                          <label>
-                            <input type="checkbox">
-                            <span class="lever"></span>
-                          </label>
-                        </div>
-                      </div>
-                      <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
-                    </li>
-                  </ul>
-                </div>
-                <div id="chatapp" class="col s12">
-                  <div class="collection border-none">
-                    <a href="#!" class="collection-item avatar border-none">
-                      <img src="<?=base_url()?>assets/admin/images/avatar/avatar-1.png" alt="" class="circle cyan">
-                      <span class="line-height-0">Elizabeth Elliott </span>
-                      <span class="medium-small right blue-grey-text text-lighten-3">5.00 AM</span>
-                      <p class="medium-small blue-grey-text text-lighten-3">Thank you </p>
-                    </a>
-                    <a href="#!" class="collection-item avatar border-none">
-                      <img src="<?=base_url()?>assets/admin/images/avatar/avatar-2.png" alt="" class="circle deep-orange accent-2">
-                      <span class="line-height-0">Mary Adams </span>
-                      <span class="medium-small right blue-grey-text text-lighten-3">4.14 AM</span>
-                      <p class="medium-small blue-grey-text text-lighten-3">Hello Boo </p>
-                    </a>
-                    <a href="#!" class="collection-item avatar border-none">
-                      <img src="<?=base_url()?>assets/admin/images/avatar/avatar-3.png" alt="" class="circle teal accent-4">
-                      <span class="line-height-0">Caleb Richards </span>
-                      <span class="medium-small right blue-grey-text text-lighten-3">9.00 PM</span>
-                      <p class="medium-small blue-grey-text text-lighten-3">Keny ! </p>
-                    </a>
-                    <a href="#!" class="collection-item avatar border-none">
-                      <img src="<?=base_url()?>assets/admin/images/avatar/avatar-4.png" alt="" class="circle cyan">
-                      <span class="line-height-0">June Lane </span>
-                      <span class="medium-small right blue-grey-text text-lighten-3">4.14 AM</span>
-                      <p class="medium-small blue-grey-text text-lighten-3">Ohh God </p>
-                    </a>
-                    <a href="#!" class="collection-item avatar border-none">
-                      <img src="<?=base_url()?>assets/admin/images/avatar/avatar-5.png" alt="" class="circle red accent-2">
-                      <span class="line-height-0">Edward Fletcher </span>
-                      <span class="medium-small right blue-grey-text text-lighten-3">5.15 PM</span>
-                      <p class="medium-small blue-grey-text text-lighten-3">Love you </p>
-                    </a>
-                    <a href="#!" class="collection-item avatar border-none">
-                      <img src="<?=base_url()?>assets/admin/images/avatar/avatar-6.png" alt="" class="circle deep-orange accent-2">
-                      <span class="line-height-0">Crystal Bates </span>
-                      <span class="medium-small right blue-grey-text text-lighten-3">8.00 AM</span>
-                      <p class="medium-small blue-grey-text text-lighten-3">Can we </p>
-                    </a>
-                    <a href="#!" class="collection-item avatar border-none">
-                      <img src="<?=base_url()?>assets/admin/images/avatar/avatar-7.png" alt="" class="circle cyan">
-                      <span class="line-height-0">Nathan Watts </span>
-                      <span class="medium-small right blue-grey-text text-lighten-3">9.53 PM</span>
-                      <p class="medium-small blue-grey-text text-lighten-3">Great! </p>
-                    </a>
-                    <a href="#!" class="collection-item avatar border-none">
-                      <img src="<?=base_url()?>assets/admin/images/avatar/avatar-8.png" alt="" class="circle red accent-2">
-                      <span class="line-height-0">Willard Wood </span>
-                      <span class="medium-small right blue-grey-text text-lighten-3">4.20 AM</span>
-                      <p class="medium-small blue-grey-text text-lighten-3">Do it </p>
-                    </a>
-                    <a href="#!" class="collection-item avatar border-none">
-                      <img src="<?=base_url()?>assets/admin/images/avatar/avatar-9.png" alt="" class="circle teal accent-4">
-                      <span class="line-height-0">Ronnie Ellis </span>
-                      <span class="medium-small right blue-grey-text text-lighten-3">5.30 PM</span>
-                      <p class="medium-small blue-grey-text text-lighten-3">Got that </p>
-                    </a>
-                    <a href="#!" class="collection-item avatar border-none">
-                      <img src="<?=base_url()?>assets/admin/images/avatar/avatar-1.png" alt="" class="circle cyan">
-                      <span class="line-height-0">Gwendolyn Wood </span>
-                      <span class="medium-small right blue-grey-text text-lighten-3">4.34 AM</span>
-                      <p class="medium-small blue-grey-text text-lighten-3">Like you </p>
-                    </a>
-                    <a href="#!" class="collection-item avatar border-none">
-                      <img src="<?=base_url()?>assets/admin/images/avatar/avatar-2.png" alt="" class="circle red accent-2">
-                      <span class="line-height-0">Daniel Russell </span>
-                      <span class="medium-small right blue-grey-text text-lighten-3">12.00 AM</span>
-                      <p class="medium-small blue-grey-text text-lighten-3">Thank you </p>
-                    </a>
-                    <a href="#!" class="collection-item avatar border-none">
-                      <img src="<?=base_url()?>assets/admin/images/avatar/avatar-3.png" alt="" class="circle teal accent-4">
-                      <span class="line-height-0">Sarah Graves </span>
-                      <span class="medium-small right blue-grey-text text-lighten-3">11.14 PM</span>
-                      <p class="medium-small blue-grey-text text-lighten-3">Okay you </p>
-                    </a>
-                    <a href="#!" class="collection-item avatar border-none">
-                      <img src="<?=base_url()?>assets/admin/images/avatar/avatar-4.png" alt="" class="circle red accent-2">
-                      <span class="line-height-0">Andrew Hoffman </span>
-                      <span class="medium-small right blue-grey-text text-lighten-3">7.30 PM</span>
-                      <p class="medium-small blue-grey-text text-lighten-3">Can do </p>
-                    </a>
-                    <a href="#!" class="collection-item avatar border-none">
-                      <img src="<?=base_url()?>assets/admin/images/avatar/avatar-5.png" alt="" class="circle cyan">
-                      <span class="line-height-0">Camila Lynch </span>
-                      <span class="medium-small right blue-grey-text text-lighten-3">2.00 PM</span>
-                      <p class="medium-small blue-grey-text text-lighten-3">Leave it </p>
-                    </a>
-                  </div>
-                </div>
-                <div id="activity" class="col s12">
-                  <h6 class="mt-5 mb-3 ml-3">RECENT ACTIVITY</h6>
-                  <div class="activity">
-                    <div class="col s3 mt-2 center-align recent-activity-list-icon">
-                      <i class="material-icons white-text icon-bg-color deep-purple lighten-2">add_shopping_cart</i>
-                    </div>
-                    <div class="col s9 recent-activity-list-text">
-                      <a href="#" class="deep-purple-text medium-small">just now</a>
-                      <p class="mt-0 mb-2 fixed-line-height font-weight-300 medium-small">Jim Doe Purchased new equipments for zonal office.</p>
-                    </div>
-                    <div class="recent-activity-list chat-out-list row mb-0">
-                      <div class="col s3 mt-2 center-align recent-activity-list-icon">
-                        <i class="material-icons white-text icon-bg-color cyan lighten-2">airplanemode_active</i>
-                      </div>
-                      <div class="col s9 recent-activity-list-text">
-                        <a href="#" class="cyan-text medium-small">Yesterday</a>
-                        <p class="mt-0 mb-2 fixed-line-height font-weight-300 medium-small">Your Next flight for USA will be on 15th August 2015.</p>
-                      </div>
-                    </div>
-                    <div class="recent-activity-list chat-out-list row mb-0">
-                      <div class="col s3 mt-2 center-align recent-activity-list-icon medium-small">
-                        <i class="material-icons white-text icon-bg-color green lighten-2">settings_voice</i>
-                      </div>
-                      <div class="col s9 recent-activity-list-text">
-                        <a href="#" class="green-text medium-small">5 Days Ago</a>
-                        <p class="mt-0 mb-2 fixed-line-height font-weight-300 medium-small">Natalya Parker Send you a voice mail for next conference.</p>
-                      </div>
-                    </div>
-                    <div class="recent-activity-list chat-out-list row mb-0">
-                      <div class="col s3 mt-2 center-align recent-activity-list-icon">
-                        <i class="material-icons white-text icon-bg-color amber lighten-2">store</i>
-                      </div>
-                      <div class="col s9 recent-activity-list-text">
-                        <a href="#" class="amber-text medium-small">1 Week Ago</a>
-                        <p class="mt-0 mb-2 fixed-line-height font-weight-300 medium-small">Jessy Jay open a new store at S.G Road.</p>
-                      </div>
-                    </div>
-                    <div class="recent-activity-list row">
-                      <div class="col s3 mt-2 center-align recent-activity-list-icon">
-                        <i class="material-icons white-text icon-bg-color deep-orange lighten-2">settings_voice</i>
-                      </div>
-                      <div class="col s9 recent-activity-list-text">
-                        <a href="#" class="deep-orange-text medium-small">2 Week Ago</a>
-                        <p class="mt-0 mb-2 fixed-line-height font-weight-300 medium-small">voice mail for conference.</p>
-                      </div>
-                    </div>
-                    <div class="recent-activity-list chat-out-list row mb-0">
-                      <div class="col s3 mt-2 center-align recent-activity-list-icon medium-small">
-                        <i class="material-icons white-text icon-bg-color brown lighten-2">settings_voice</i>
-                      </div>
-                      <div class="col s9 recent-activity-list-text">
-                        <a href="#" class="brown-text medium-small">1 Month Ago</a>
-                        <p class="mt-0 mb-2 fixed-line-height font-weight-300 medium-small">Natalya Parker Send you a voice mail for next conference.</p>
-                      </div>
-                    </div>
-                    <div class="recent-activity-list chat-out-list row mb-0">
-                      <div class="col s3 mt-2 center-align recent-activity-list-icon">
-                        <i class="material-icons white-text icon-bg-color deep-purple lighten-2">store</i>
-                      </div>
-                      <div class="col s9 recent-activity-list-text">
-                        <a href="#" class="deep-purple-text medium-small">3 Month Ago</a>
-                        <p class="mt-0 mb-2 fixed-line-height font-weight-300 medium-small">Jessy Jay open a new store at S.G Road.</p>
-                      </div>
-                    </div>
-                    <div class="recent-activity-list row">
-                      <div class="col s3 mt-2 center-align recent-activity-list-icon">
-                        <i class="material-icons white-text icon-bg-color grey lighten-2">settings_voice</i>
-                      </div>
-                      <div class="col s9 recent-activity-list-text">
-                        <a href="#" class="grey-text medium-small">1 Year Ago</a>
-                        <p class="mt-0 mb-2 fixed-line-height font-weight-300 medium-small">voice mail for conference.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </aside>
-        <!-- END RIGHT SIDEBAR NAV-->
-      </div>
-      <!-- END WRAPPER -->
-    </div>
-    <!-- END MAIN -->
-    <!-- //////////////////////////////////////////////////////////////////////////// -->
+     
+  <!--Footer-->
+  <footer class="page-footer fixed-bottom  text-center font-small light-blue mt-4 wow fadeIn ">
+
+  
+
     
-    <!-- START FOOTER -->
-    <footer class="page-footer gradient-45deg-light-blue-cyan">
-        <div class="footer-copyright">
-          <div class="container">
-            <span>Copyright ©
-              <script type="text/javascript">
-                document.write(new Date().getFullYear());
-              </script> <a class="grey-text text-lighten-2" href="http://themeforest.net/user/pixinvent/portfolio?ref=pixinvent" target="_blank">DEVELOPER </a> </span>
-            <span class="right hide-on-small-only"> Design and Developed by <a class="grey-text text-lighten-2" href="https://pixinvent.com/">DEVELOPER</a></span>
-          </div>
-        </div>
-    </footer>
-    <!-- END FOOTER -->
-    <!-- ================================================
-    Scripts
-    ================================================ -->
-    <!-- jQuery Library -->
-    <script type="text/javascript" src="<?=base_url()?>assets/admin/vendors/jquery-3.2.1.min.js"></script>
-    <!--materialize js-->
-    <script type="text/javascript" src="<?=base_url()?>assets/admin/js/materialize.min.js"></script>
-    <!--scrollbar-->
-    <script type="text/javascript" src="<?=base_url()?>assets/admin/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
-    <script type="text/javascript" src="<?=base_url()?>assets/admin/js/plugins.js"></script>
-    <!--custom-script.js - Add your own theme custom JS-->
-    <script type="text/javascript" src="<?=base_url()?>assets/admin/js/custom-script.js"></script>
-  </body>
+
+
+<!--Copyright-->
+<div class="footer-copyright py-2">
+  © 2021 Copyright:
+  <a href="" target="_blank">DEVELOPERS </a>
+</div>
+<!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="<?=base_url()?>assets/admin/js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="<?=base_url()?>assets/admin/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="<?=base_url()?>assets/admin/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="<?=base_url()?>assets/admin/js/mdb.min.js"></script>
+<!-- Initializations -->
+<script type="text/javascript">
+// Animations initialization
+new WOW().init();
+
+</script>
+
+<!-- Charts -->
+<script>
+// Line
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(153, 102, 255, 0.2)',
+        'rgba(255, 159, 64, 0.2)'
+      ],
+      borderColor: [
+        'rgba(255,99,132,1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(153, 102, 255, 1)',
+        'rgba(255, 159, 64, 1)'
+      ],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  }
+});
+
+//pie
+var ctxP = document.getElementById("pieChart").getContext('2d');
+var myPieChart = new Chart(ctxP, {
+  type: 'pie',
+  data: {
+    labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+    datasets: [{
+      data: [300, 50, 100, 40, 120],
+      backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+      hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+    }]
+  },
+  options: {
+    responsive: true,
+    legend: false
+  }
+});
+
+
+//line
+var ctxL = document.getElementById("lineChart").getContext('2d');
+var myLineChart = new Chart(ctxL, {
+  type: 'line',
+  data: {
+    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    datasets: [{
+        label: "My First dataset",
+        backgroundColor: [
+          'rgba(105, 0, 132, .2)',
+        ],
+        borderColor: [
+          'rgba(200, 99, 132, .7)',
+        ],
+        borderWidth: 2,
+        data: [65, 59, 80, 81, 56, 55, 40]
+      },
+      {
+        label: "My Second dataset",
+        backgroundColor: [
+          'rgba(0, 137, 132, .2)',
+        ],
+        borderColor: [
+          'rgba(0, 10, 130, .7)',
+        ],
+        data: [28, 48, 40, 19, 86, 27, 90]
+      }
+    ]
+  },
+  options: {
+    responsive: true
+  }
+});
+
+
+//radar
+var ctxR = document.getElementById("radarChart").getContext('2d');
+var myRadarChart = new Chart(ctxR, {
+  type: 'radar',
+  data: {
+    labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+    datasets: [{
+      label: "My First dataset",
+      data: [65, 59, 90, 81, 56, 55, 40],
+      backgroundColor: [
+        'rgba(105, 0, 132, .2)',
+      ],
+      borderColor: [
+        'rgba(200, 99, 132, .7)',
+      ],
+      borderWidth: 2
+    }, {
+      label: "My Second dataset",
+      data: [28, 48, 40, 19, 96, 27, 100],
+      backgroundColor: [
+        'rgba(0, 250, 220, .2)',
+      ],
+      borderColor: [
+        'rgba(0, 213, 132, .7)',
+      ],
+      borderWidth: 2
+    }]
+  },
+  options: {
+    responsive: true
+  }
+});
+
+//doughnut
+var ctxD = document.getElementById("doughnutChart").getContext('2d');
+var myLineChart = new Chart(ctxD, {
+  type: 'doughnut',
+  data: {
+    labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+    datasets: [{
+      data: [300, 50, 100, 40, 120],
+      backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+      hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+    }]
+  },
+  options: {
+    responsive: true
+  }
+});
+
+</script>
+
+<script>
+// Regular map
+function regular_map() {
+  var var_location = new google.maps.LatLng(40.725118, -73.997699);
+
+  var var_mapoptions = {
+    center: var_location,
+    zoom: 14
+  };
+
+  var var_map = new google.maps.Map(document.getElementById("map-container"),
+    var_mapoptions);
+
+  var var_marker = new google.maps.Marker({
+    position: var_location,
+    map: var_map,
+    title: "New York"
+  });
+}
+
+new Chart(document.getElementById("horizontalBar"), {
+  "type": "horizontalBar",
+  "data": {
+    "labels": ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey"],
+    "datasets": [{
+      "label": "My First Dataset",
+      "data": [22, 33, 55, 12, 86, 23, 14],
+      "fill": false,
+      "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)",
+        "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)",
+        "rgba(54, 162, 235, 0.2)",
+        "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"
+      ],
+      "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)",
+        "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)",
+        "rgb(201, 203, 207)"
+      ],
+      "borderWidth": 1
+    }]
+  },
+  "options": {
+    "scales": {
+      "xAxes": [{
+        "ticks": {
+          "beginAtZero": true
+        }
+      }]
+    }
+  }
+});
+
+</script>
+</body>
+
 </html>

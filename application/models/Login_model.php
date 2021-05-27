@@ -31,4 +31,11 @@ class Login_model extends CI_Model {
 	$this->db->UPDATE('usuario',$data);
 	}
 
+	public function insertar($data)
+    {
+    $this->db->insert('formulariodenuncia',$data);
+    return TRUE;
+    }
+
+
 }

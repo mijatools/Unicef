@@ -1,33 +1,37 @@
 
-     <!-- START CONTENT -->
-     <section id="content">
-          <!--start container-->
-          <div class="container">
-            <!--card stats start-->
-            <div id="card-stats">
+            <!--Main layout-->
+ <main class="pt-5 mx-lg-5">
+    <div class="container-fluid mt-5">
 
-           <br> 
-
-           <div class="container-fluid">
-           <div id="tabs" class="tabs">
-           <nav class="light-blue lighten-2" >  
-    <ul>
-          <li><a href="<?php echo base_url(); ?>./Admin/Centros/"> <b>INICIO</b></a></li>
-            <li><a href="<?php echo base_url(); ?>Admin/RegisterUsuario"> <b>REGISTRAR USUARIO</b></a></li>
-            <li><a href="<?php echo base_url(); ?>Admin/ListaUsuario"> <b>LISTA DE USUARIO</b></a></li>
-            <li><a href="<?php echo base_url(); ?>./Admin/Centros/Instituciones/"><b>VER CAMBIOS</b></a></li>
+     
+    <nav class="navbar navbar-expand-lg navbar-dark info-color example z-depth-5">
+  <a class="navbar-brand" href="#"><b>INICIO</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="<?php echo base_url(); ?>Admin/RegisterUsuario"> <b>REGISTRAR USUARIO</b> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url(); ?>Admin/ListaUsuario"> <b>LISTA DE USUARIO</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url(); ?>./Admin/Centros/Instituciones/"><b>VER CAMBIOS</b></a>
+      </li>
+     
     </ul>
-  </nav>      
-            </div>
+  </div>
+</nav>
+    
+
+
+
            </div>
+  </main>
+  <!--Main layout-->
 
          
-            
-
-            </div>
-            <!-- //////////////////////////////////////////////////////////////////////////// -->
-          </div>
-          <!--end container-->
-        </section>
-        <!-- END CONTENT -->
-        
+      

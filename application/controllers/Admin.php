@@ -64,4 +64,61 @@ class Admin extends CI_Controller {
 	 redirect(base_url('Admin/ListaUsuario'),'refresh');
 	 }
 
+
+
+
+	//  AQUI VAMOS HACER LAS DENUNCIAS
+	 public function denuncias()
+	 {
+		$this->load->view('layouts/header');
+		 $this->load->view('denuncias/v_denuncias');
+		 $this->load->view('layouts/footer');
+		 
+	 }
+
+	 	public function tambah()
+		 {
+		 $this->load->view('v_insert');
+		 }
+		 public function insertarDenuncia()
+		 {
+			$nombreCompleto   = $this->input->post('nombreCompleto');
+			$ci = $this->input->post('ci');
+			$ciudad = $this->input->post('ciudad');
+			$correoElectronico = $this->input->post('correoElectronico');
+			$telefono = $this->input->post('telefono');
+			$hechosDenuncia = $this->input->post('hechosDenuncia');
+			$pruebasDocumentos = $this->input->post('pruebasDocumentos');
+			$numeroHojas = $this->input->post('numeroHojas');
+			$claseDocumento = $this->input->post('claseDocumento');
+			$otrasPruebas = $this->input->post('otrasPruebas');
+			$nombreDenunciado = $this->input->post('nombreDenunciado');
+			$direccionDenunciado = $this->input->post('direccionDenunciado');
+			$unidadDenunciado = $this->input->post('unidadDenunciado');
+			$cargoDenunciado = $this->input->post('cargoDenunciado');
+		 
+		 
+		 $data = array(
+			'nombreCompleto'       => $nombreCompleto,
+			
+			'ci'     => $ci,
+			'ciudad'     => $ciudad,
+			'correoElectronico'     => $correoElectronico,
+			'telefono'     => $telefono,
+			'hechosDenuncia'     => $hechosDenuncia,
+			'pruebasDocumentos'     => $pruebasDocumentos,
+			'numeroHojas'     => $numeroHojas,
+			'claseDocumento'     => $claseDocumento,
+			'otrasPruebas'     => $otrasPruebas,
+			'nombreDenunciado'     => $nombreDenunciado,
+			'direccionDenunciado'     => $direccionDenunciado,
+			'unidadDenunciado'     => $unidadDenunciado,
+			'cargoDenunciado'     => $cargoDenunciado,
+		 );
+		 $this->Login_model->insertar($data);
+		 redirect('./Admin/Kardex/kardex/','refresh');
+		 }
+		
+	//  FIN DE LAS DENUNCIAS
+
 }

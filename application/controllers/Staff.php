@@ -12,8 +12,8 @@ class Staff extends CI_Controller {
 	function index() {
 		if($this->session->userdata('level')==='3') {
 			$this->load->view('layouts/header');
-			$this->load->view('staff_view');
-			$this->load->view('layouts/footer');
+			$this->load->view('Usuario_view');
+			$this->load->view('layouts/footer'); 
 		} else {
 			echo "Access Denied!";
 		}
