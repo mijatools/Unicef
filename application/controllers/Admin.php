@@ -96,6 +96,9 @@ class Admin extends CI_Controller {
 			$direccionDenunciado = $this->input->post('direccionDenunciado');
 			$unidadDenunciado = $this->input->post('unidadDenunciado');
 			$cargoDenunciado = $this->input->post('cargoDenunciado');
+			$uno = $this->input->post('uno');
+			$dos = $this->input->post('dos');
+			$tres = $this->input->post('tres');
 		 
 		 
 		 $data = array(
@@ -114,6 +117,9 @@ class Admin extends CI_Controller {
 			'direccionDenunciado'     => $direccionDenunciado,
 			'unidadDenunciado'     => $unidadDenunciado,
 			'cargoDenunciado'     => $cargoDenunciado,
+			'uno'     => $uno,
+			'dos'     => $dos,
+			'tres'     => $tres,
 		 );
 		 $this->Login_model->insertar($data);
 		 redirect('./Admin/Kardex/kardex/','refresh');

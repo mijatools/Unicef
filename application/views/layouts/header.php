@@ -19,7 +19,7 @@
   <link href="<?=base_url()?>assets/admin/css/style.min.css" rel="stylesheet">
 
 </head>
-
+<body class="grey lighten-4">
 <style>
 @media handheld, only screen and (min-width: 767px) {
 .ls-container {
@@ -38,7 +38,7 @@ display:none;
  <header>
 
  <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light  light-blue scrolling-navbar">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light  light-blue scrolling-navbar py-2">
       <div class="container-fluid">
 
         <!-- Brand -->
@@ -100,7 +100,7 @@ display:none;
           <li class="nav-item avatar dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
-          <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"  class="rounded-circle z-depth-0"
+          <img src="<?=base_url()?>assets/admin/images/favicon/logo1.png"  class="rounded-circle z-depth-0"
             alt="avatar image" height="30px">
         </a>
         <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
@@ -125,17 +125,12 @@ display:none;
        </div>
 
   <div class="list-group list-group-flush">
-    <a href="#" class="list-group-item active waves-effect">
+    <a href="#" class="list-group-item active waves-effect"><center><b>UNICEF</b></center>
       
     </a>
     <a href="<?=base_url()?>Admin/denuncias" class="list-group-item list-group-item-action waves-effect">
       <i class="fas fa-user mr-3"></i>DENUNCIADO</a>
-    <a href="#" class="list-group-item list-group-item-action waves-effect">
-      <i class="fas fa-table mr-3"></i>Tables</a>
-    <a href="#" class="list-group-item list-group-item-action waves-effect">
-      <i class="fas fa-map mr-3"></i>Maps</a>
-    <a href="#" class="list-group-item list-group-item-action waves-effect">
-      <i class="fas fa-money-bill-alt mr-3"></i>Orders</a>
+  
   </div>
 
 </div>
