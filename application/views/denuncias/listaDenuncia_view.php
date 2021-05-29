@@ -196,6 +196,25 @@
             </table>
         </div>
     </div>
+
+    <div class="presentation">Mouse aquí<i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+
+<nav class="float-action-button">
+  <a href="<?php echo base_url(); ?>Admin/listaDenuncia" class="buttons" title="Crear Denuncia" data-toggle="tooltip" data-placement="left">
+          <i class="fa fa-edit fa-xs"></i>
+        </a>
+  <a href="#" class="buttons" title="Ver Denuncia" data-toggle="tooltip" data-placement="left">
+          <i class="fa fa-book-open fa-xs"></i>
+        </a>
+  <a href="#" class="buttons" title="Eliminar Denuncia" data-toggle="tooltip" data-placement="left">
+          <i class="fa fa-trash-alt fa-xs"></i>
+        </a>
+  <a href="#" class="buttons main-button" title="Seleccione una acción"  data-toggle="tooltip" data-placement="left">
+          <i class="fa fa-times fa-xs"></i>
+          <i class="fa fa-plus-circle fa-xs"></i>
+        </a>
+</nav>
+</div>
 </main>
 <!--Main layout-->
 
