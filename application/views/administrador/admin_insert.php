@@ -1,7 +1,6 @@
          <!--Main layout-->
          <main class="pt-5 mx-lg-5">
            <div class="container-fluid mt-5">
-
              <nav class="navbar navbar-expand-lg navbar-dark info-color example z-depth-3">
                <a class="navbar-brand" href="#"><b>INICIO</b></a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +17,6 @@
                    <li class="nav-item">
                      <a class="nav-link" href="<?php echo base_url(); ?>./Admin/Centros/Instituciones/"><b>VER CAMBIOS</b></a>
                    </li>
-
                  </ul>
                </div>
              </nav>
@@ -27,10 +25,8 @@
              <div class="container">
                <div class="row">
                  <div class="col-sm-3">
-
                  </div>
                  <div class="col-sm-6">
-
                    <div class="card">
                      <!-- Default form register -->
                      <form class=" border border-light p-5" action="#!">
@@ -80,7 +76,7 @@
                          </select></div>
 
                        <!-- Sign up button -->
-                       <button type="submit" class="btn btn-info my-4 btn-block" name="submit"  >REGISTRAR USUARIO</button>
+                       <button type="submit" class="btn btn-info my-4 btn-block" name="submit">REGISTRAR USUARIO</button>
                        <hr>
                        <?php echo form_close(); ?>
                      </form>

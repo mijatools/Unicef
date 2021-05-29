@@ -33,6 +33,14 @@ new WOW().init();
 
 
 
+               
+               // Tooltips Initialization
+ $(function () {
+ $('[data-toggle="tooltip"]').tooltip()
+ })
+ 
+ 
+
 </script>
 
 <!-- Charts -->
